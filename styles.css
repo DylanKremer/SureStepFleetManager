@@ -77,3 +77,10 @@
 .watchlist-priority{display:inline-block;margin-left:10px;background:#e16c56;color:white;border-radius:4px;padding:3px 6px;font-size:9px;font-weight:850;letter-spacing:.4px}
 @media(max-width:850px){.zone-editor-drawer{top:75px;bottom:10px;width:min(370px,calc(100% - 20px));right:10px}.fleet-tracking-workspace .satellite-map-frame.is-large .satellite-map{height:clamp(420px,65vh,680px)}}
 @media(max-width:580px){.zone-editor-drawer{top:74px;right:5px;width:calc(100% - 10px);bottom:8px}.tracking-map-actions{width:100%;justify-content:space-between}.fleet-tracking-workspace .satellite-map-frame.is-large .satellite-map{height:500px}}
+
+/* Boat-profile location inset */
+.boat-location-card{margin:18px 0 22px;overflow:hidden}
+.boat-location-card .panel-head{gap:12px;flex-wrap:wrap}
+.boat-profile-satellite-map{height:305px;width:100%;border-radius:10px;background:#dce8e7;overflow:hidden}
+.boat-location-footer{color:#66818d;font-size:11px;margin-top:9px}
+@media(max-width:660px){.boat-profile-satellite-map{height:255px}}
