@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c2433">
+  <title>Sure Step Marine | Fleet Manager v0.5 — Click-to-Close Polygon Editor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" onerror="this.onerror=null;this.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="Sure Step Marine Fleet Manager home">
+        <span class="brand-symbol"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 27c9-11 16-11 24-2 5 6 9 4 14 0"/><path d="M5 36c9-11 16-11 24-2 5 6 9 4 14 0"/><path d="M26 7l-7 13h14L26 7Z"/></svg></span>
+        <span><strong>SURE STEP</strong><small>MARINE · FLEET MANAGER</small></span>
+      </a>
+      <div class="workspace"><div class="workspace-icon">CS</div><span><strong>Crazy Sister Marina</strong><small>Demo workspace</small></span><span class="chev">⌄</span></div>
+      <div class="nav-section-label">WORKSPACE</div>
+      <nav id="nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-bottom"><div class="system-indicator"><span class="status-light"></span><span>Prototype • sample data</span></div><div class="support-note">Built for rental fleets & boat clubs.<br>Traction for every Tide.</div></div>
+    </aside>
+    <div class="main-layout">
+      <header class="topbar"><div class="topbar-left"><button id="mobileMenu" class="icon-button mobile-menu" aria-label="Toggle navigation">☰</button><div class="breadcrumbs"><span>Sure Step Marine</span><span class="crumb-divider">/</span><strong id="crumbTitle">Dashboard</strong></div></div><div class="topbar-right"><span class="top-demo"><span class="status-light"></span>DEMO MODE</span><button class="icon-button top-notifications" data-action="nav" data-page="alerts" aria-label="Open alerts" title="Alerts"><span data-icon="bell"></span><span class="notification-dot"></span></button><div class="avatar">CK</div></div></header>
+      <main id="appContent" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toastRoot" aria-live="polite" aria-atomic="true"></div>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>if(!window.L){document.write('<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>');}</script>
+  <script src="./app.js"></script>
+</body>
+</html>
