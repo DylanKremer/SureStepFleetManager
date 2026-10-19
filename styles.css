@@ -55,3 +55,25 @@
 .zone-vertex-start.can-close span{background:#12a575;color:#fff;box-shadow:0 0 0 6px rgba(255,205,69,.65),0 0 16px rgba(255,255,255,.6);cursor:pointer}
 .zone-vertex-start.is-closed span{background:#12a575;box-shadow:0 0 0 4px rgba(40,187,131,.35);cursor:default}
 .zone-vertex-start:focus-visible span{outline:3px solid #fff;outline-offset:7px}
+
+
+/* Fleet tracking v0.6: full-width satellite workspace and collapsible editor */
+.page-container.page-tracking{max-width:none;padding-left:clamp(18px,2.2vw,38px);padding-right:clamp(18px,2.2vw,38px)}
+.fleet-tracking-workspace{display:block;position:relative}
+.fleet-tracking-workspace .tracking-map-card{width:100%}
+.fleet-tracking-workspace .satellite-map-frame.is-large .satellite-map{height:clamp(540px,70vh,960px)}
+.tracking-map-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tracking-map-actions .btn{font-size:12px}
+.zone-editor-drawer[hidden]{display:none!important}
+.zone-editor-drawer{position:absolute;right:12px;top:78px;bottom:15px;z-index:1200;width:min(390px,calc(100% - 24px));display:flex;flex-direction:column;min-height:0;border-radius:13px;overflow:hidden;background:white;box-shadow:0 8px 35px rgba(10,39,49,.25);border:1px solid #d9e5e9}
+.zone-drawer-title{display:flex;align-items:center;justify-content:space-between;padding:9px 15px 9px 19px;border-bottom:1px solid #e0ebec;flex:none}
+.zone-drawer-title strong{font-size:12px}
+.zone-editor-drawer>.zone-editor{border:0;box-shadow:none;border-radius:0;overflow-y:auto;min-height:0;flex:1}
+.watchlist-summary{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.watchlist-count{border-radius:20px;padding:6px 11px;font-size:11px;font-weight:800;background:#edf4f6;color:#4c707b}
+.watchlist-count.has-outside{background:#fce9e6;color:#b34a39}
+.watchlist-order{font-size:10px;color:#718a94}
+.watchlist-outside{background:#fff5f2}
+.watchlist-priority{display:inline-block;margin-left:10px;background:#e16c56;color:white;border-radius:4px;padding:3px 6px;font-size:9px;font-weight:850;letter-spacing:.4px}
+@media(max-width:850px){.zone-editor-drawer{top:75px;bottom:10px;width:min(370px,calc(100% - 20px));right:10px}.fleet-tracking-workspace .satellite-map-frame.is-large .satellite-map{height:clamp(420px,65vh,680px)}}
+@media(max-width:580px){.zone-editor-drawer{top:74px;right:5px;width:calc(100% - 10px);bottom:8px}.tracking-map-actions{width:100%;justify-content:space-between}.fleet-tracking-workspace .satellite-map-frame.is-large .satellite-map{height:500px}}
